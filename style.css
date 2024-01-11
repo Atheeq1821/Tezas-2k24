@@ -1,0 +1,302 @@
+.js-loading *, .js-loading *:before, .js-loading *:after {
+    -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #15051B;
+    
+    overflow-x: hidden;
+}
+.parallax{
+    background:url("Back.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+}
+.text{
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+#rmk{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 2em;
+    top: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(37, 104, 180, 0.705);
+}
+#welcome{
+    color: #33FFE1;
+    position: absolute;
+    font-size: 4em;
+    top: 100px;
+}
+#dept{
+    color: white;
+    position: absolute;
+    font-size: 1.5em;
+    top: 200px;
+
+}
+#org{
+    color: #33FFE1;
+    position: absolute;
+    font-size: 1em;
+    top: 250px;
+}
+#leftd2{
+    visibility: hidden;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+
+}
+
+.section-1{
+    position: relative;
+    background:url("bg2.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.info p{
+    font-size: 1.2em;
+    color: #33FFE1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+.info h2{
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    margin: 20px 0px;
+}
+#brochure{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: azure;
+    background-color: #0CC0DF;
+    padding: 8px 20px;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    font-weight: 700;
+}
+
+#brochure:hover{
+    background-color: azure;
+    color: #0CC0DF;
+}
+.events{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
+  grid-template-columns: 50% 50%;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+   padding: 20px 50px;
+    height: 90vh;
+}
+
+.contact{
+    background: url("cbg.png");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  
+}
+.contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cimg{
+    width: 250px;
+}
+.section-2,.section-4,.section-6{
+
+    background:url("whitebg.png"); 
+}
+.section-3,.section-5{
+    background: url("purple\ bg.png");
+    color: white;
+}
+
+.contentchild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.contentchild h3{
+    font-size: 3em;
+}
+#link{
+    background-color: #0CC0DF;
+    width: fit-content;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    transition-duration: 0.5s;
+    font-weight: 700;
+    transition-duration: .5s    ;
+}
+
+#link:hover{
+    background-color: #166b7a;
+}
+.btn{
+    display: flex;
+    gap: 30px;
+}
+.cimg{
+    transition-duration: .6s;
+}
+.cimg:hover{
+    transform: scale(1.2);
+}
+
+.ctext{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    #welcome{
+        font-size: 3em;
+    }
+    #dept{
+        font-size: 1.2em;
+        text-align: center;
+    
+    }
+    #rmk{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    #org{
+        top: 260px;
+    }
+    #tezas{
+        top: 240px;
+        width: 600px;
+        left: -120px;
+    }
+    #base{
+        height: 100vh;
+    }
+    #robot{
+        visibility: hidden;
+    }
+    #leftd{
+        visibility: hidden;
+    }
+    #leftd2{
+        visibility: visible;
+    }
+    .section-1{
+        margin-top: 0px;
+        padding: 10px;
+    
+    }
+    .info h2{
+        font-size: 1.8em;
+    }
+    .info p{
+        font-size: 1em;
+    }
+    .events{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .events img{
+        width: 250px;
+    }
+    .contentchild{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contentchild h3{
+        font-size: 2em;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact{
+        background: url("cbg.png");
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        padding: 0px 20px;
+                
+      
+    }
+    .contact div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cimg{
+        width: 100px;
+    }
+    .ctext{
+        font-size: .8em;
+        text-align: center;
+    }
+    .parallax{
+        height: 95vh;
+    }
+    
+  }
+
+  .hidden{
+    opacity: 0;
+    transform: scale(0);
+    transition: all .7s;
+  }
+  .show{
+    opacity: 1;
+    transform: scale(1);
+  }
