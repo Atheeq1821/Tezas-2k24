@@ -84,11 +84,11 @@ body{
 .info p{
     font-size: 1.2em;
     color: #33FFE1;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 .info h2{
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    text-shadow: 2px 2px 4px rgba(0,0,0,1);
     margin: 20px 0px;
 }
 #brochure{
@@ -101,7 +101,9 @@ body{
     transition-duration: 0.5s;
     font-weight: 700;
 }
-
+#blue{
+    color: #33FFE1;
+}
 #brochure:hover{
     background-color: azure;
     color: #0CC0DF;
@@ -180,8 +182,9 @@ body{
     display: flex;
     gap: 30px;
 }
+
 .cimg{
-    transition-duration: .6s;
+    transition-duration: 0.6s;
 }
 .cimg:hover{
     transform: scale(1.2);
